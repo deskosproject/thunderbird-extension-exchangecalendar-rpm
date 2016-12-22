@@ -1,0 +1,5 @@
+= DeskOS: thunderbird-extension-exchangecalendar RPM
+
+This is the _thunderbird-extension-exchangecalendar_ RPM package for the *DeskOS* operating system.
+
+Upstream comes from https://github.com/Ericsson/exchangecalendar
