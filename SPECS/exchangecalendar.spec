@@ -1,6 +1,8 @@
+%define debug_package %{nil}
+
 Name:           thunderbird-extension-exchangecalendar
 Version:        3.8.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Exchange 2007/2010/2013 Calendar, Tasks, Contacts and GAL Provider for Thunderbird
 
 Group:          Applications/Internet
@@ -8,7 +10,6 @@ License:        GPLv3
 URL:            https://github.com/Ericsson/exchangecalendar
 Source0:        https://github.com/Ericsson/exchangecalendar/archive/v3.8.0.tar.gz
 
-BuildArch:      noarch
 Requires:       thunderbird
 
 %description
@@ -30,5 +31,8 @@ cp -p exchangecalendar-v3.8.0.xpi $RPM_BUILD_ROOT/%{_libdir}/thunderbird/extensi
 %{_libdir}/thunderbird/extensions/*.xpi
 
 %changelog
+* Thu Dec 22 2016 Ricardo Arguello <rarguello@deskosproject.org> - 3.8.0-2
+- Removed BuildArch: noarch
+
 * Mon Dec 19 2016 Ricardo Arguello <rarguello@deskosproject.org> - 3.8.0-1
 - Initial release for DeskOS
